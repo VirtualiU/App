@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Atendimento Pós-venda | Grupo Adel</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="hero">
+      <nav class="nav container">
+        <div class="brand">
+          <span class="brand__mark">GA</span>
+          <span class="brand__name">Grupo Adel</span>
+        </div>
+        <a class="nav__cta" href="#solicitar">Solicitar atendimento</a>
+      </nav>
+
+      <div class="hero__content container">
+        <p class="hero__eyebrow">Atendimento pós-venda</p>
+        <h1>Suporte especializado para manter sua operação em movimento.</h1>
+        <p class="hero__subtitle">
+          Abrimos chamados, acompanhamos o status e entregamos retorno rápido para você resolver
+          ocorrências com eficiência.
+        </p>
+        <div class="hero__actions">
+          <a class="btn btn--primary" href="#solicitar">Abrir chamado</a>
+          <a class="btn btn--ghost" href="#etapas">Como funciona</a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="section container" id="etapas">
+        <h2>Fluxo de atendimento em 3 etapas</h2>
+        <div class="grid grid--3">
+          <article class="card">
+            <h3>1. Registro</h3>
+            <p>Você informa os dados do equipamento e descreve o problema em um formulário simples.</p>
+          </article>
+          <article class="card">
+            <h3>2. Triagem técnica</h3>
+            <p>Nosso time valida o chamado e orienta os próximos passos com prioridade definida.</p>
+          </article>
+          <article class="card">
+            <h3>3. Acompanhamento</h3>
+            <p>Você recebe atualizações sobre prazos, peças e conclusão até a finalização.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section section--alt">
+        <div class="container split">
+          <div>
+            <h2>Por que abrir seu chamado conosco?</h2>
+            <ul class="checklist">
+              <li>Atendimento em horário comercial com retorno estruturado.</li>
+              <li>Histórico centralizado de ocorrências e interações.</li>
+              <li>Canal único para assistência técnica e dúvidas operacionais.</li>
+              <li>Transparência nas etapas e prazos de resolução.</li>
+            </ul>
+          </div>
+          <aside class="kpi-card">
+            <p class="kpi-label">Meta de retorno inicial</p>
+            <p class="kpi-value">Até 24h úteis</p>
+            <p class="kpi-footnote">Conforme prioridade e tipo de ocorrência.</p>
+          </aside>
+        </div>
+      </section>
+
+      <section class="section container" id="solicitar">
+        <h2>Solicitar atendimento pós-venda</h2>
+        <form id="ticketForm" class="form" novalidate>
+          <div class="field-group">
+            <label for="nome">Nome</label>
+            <input id="nome" name="nome" type="text" required />
+          </div>
+          <div class="field-group">
+            <label for="email">E-mail</label>
+            <input id="email" name="email" type="email" required />
+          </div>
+          <div class="field-group">
+            <label for="telefone">Telefone</label>
+            <input id="telefone" name="telefone" type="tel" required />
+          </div>
+          <div class="field-group field-group--full">
+            <label for="mensagem">Descreva sua solicitação</label>
+            <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+          </div>
+          <button type="submit" class="btn btn--primary">Enviar solicitação</button>
+          <p id="formMessage" class="form-message" aria-live="polite"></p>
+        </form>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>© <span id="year"></span> Grupo Adel — Atendimento pós-venda.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
